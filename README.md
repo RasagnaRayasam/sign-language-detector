@@ -24,14 +24,14 @@ A real-time hand gesture recognition system that converts sign language into rea
 ## 📁 Project Structure
 
 sign-language-detector/
-├── collect_imgs.py # Capture and store gesture images
-├── create_dataset.py # Preprocess images and create labeled data
-├── train_classifier.py # Train ML model and save as model.p
-├── inference_classifier.py # Use webcam to detect gestures live
-├── requirements.txt # Python dependencies
-├── model.p # Trained classifier (small enough to include)
-├── data.pickle # Labeled dataset (optional for upload)
-├── README.md # This file
+├── collect_imgs.py # Capture and store gesture images  
+├── create_dataset.py # Preprocess images and create labeled data  
+├── train_classifier.py # Train ML model and save as model.p  
+├── inference_classifier.py # Use webcam to detect gestures live  
+├── requirements.txt # Python dependencies  
+├── model.p # Trained classifier (small enough to include)  
+├── data.pickle # Labeled dataset (optional for upload)  
+├── README.md # This file  
 
 
 ---
@@ -50,8 +50,6 @@ sign-language-detector/
 
 👉 Download it here: [Python 3.10](https://www.python.org/downloads/release/python-3100/)  
 ✅ Check "Add to PATH" during installation
-
----
 
 ### 2️⃣ Clone the Repo
 git clone https://github.com/your-username/sign-language-detector-python.git
