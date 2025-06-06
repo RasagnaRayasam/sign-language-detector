@@ -46,39 +46,42 @@ sign-language-detector/
 
 ## 🔧 Setup Instructions
 
-### 1️⃣ Install Python 3.10
+1️⃣ Install Python 3.10
+👉 Download it here: Python 3.10 - https://www.python.org/downloads/release/python-3100/
+✅ Make sure to check "Add to PATH" during installation.
 
-👉 Download it here: [Python 3.10](https://www.python.org/downloads/release/python-3100/)  
-✅ Check "Add to PATH" during installation
+2️⃣ Clone the Repository
+git clone https://github.com/your-username/sign-language-detector-python.git
+cd sign-language-detector-python
+python collect_imgs.py
 
-### 2️⃣ Clone the Repo
--git clone https://github.com/your-username/sign-language-detector-python.git
--cd sign-language-detector-python
--python collect_imgs.py
-
-3️⃣ Create Virtual Environment
--py -3.10 -m venv venv
--.\venv\Scripts\activate
+3️⃣ Create a Virtual Environment
+py -3.10 -m venv venv
+.\venv\Scripts\activate
 
 4️⃣ Install Dependencies
--pip install opencv-python mediapipe==0.10.9 scikit-learn
+pip install opencv-python mediapipe==0.10.9 scikit-learn
 
-You can also run:
--pip install -r requirements.txt
+Or install from requirements.txt:
+pip install -r requirements.txt
 
 5️⃣ Run the Project
--python inference_classifier.py
+python inference_classifier.py
 
--The webcam will open.
--Show a trained hand gesture (A, B, C, etc.)
--Prediction will appear in the console.
--For privacy and size reasons, the data/ folder (with training images) is not included.
+The webcam will open.
 
--If you'd like to retrain the model:
+Show a trained hand gesture (A, B, C, etc.)
 
---python collect_imgs.py   # Collect new images
---python train_classifier.py  # Train model.p again
---Make sure you follow the same class labeling and structure used originally.
+Prediction will appear in the console.
+
+🗂 Dataset Note
+For privacy and size reasons, the data/ folder (with training images) is not included.
+
+If you'd like to retrain the model:
+python collect_imgs.py → Collect new images
+python train_classifier.py → Train model.p again
+
+✅ Follow the same class labeling and folder structure as the original.
 
 ---
 
